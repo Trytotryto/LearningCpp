@@ -31,4 +31,4 @@ const int& r = i;
 
 const int i = 0;
 int &r = i;
-#=> error: nonconst reference to a const object .
+#=> error: nonconst reference to a const object . that is we cannot bind an ordinary int& to a const in object
