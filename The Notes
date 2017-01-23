@@ -1,3 +1,34 @@
 //const
-const int *p = &x;
-//this
+const int i = 0; #=> a const must be initialized. 
+
+//pointers and const ((that we can))
+int i = 0;
+
+const int *p = &i; #=> low-level const. 1.we can change p; 2.we CANNOT alter i via p; 3.we can manipulate and alter i direcly.
+
+int *const p = &i; #=> top-level const. 1.p will always points to i;
+
+const int *const p = &i;
+
+//pointers and const ((that we CANNOT))
+
+const int i = 0;
+int* p = &i;
+#=> error : p is a plain pointer
+
+////references to const ((that we can))
+int i = 0;
+const int& r = i; 
+
+#=> 1.we cannot alter i via r; 2.we can manipulate and alter i direcly;
+    3.just the same as low-level pointer; 4.there is no top-level reference , because it's natural from it's defintion;
+    
+const int i = 0;
+const int& r = i;
+#=> both reference and underlying object are const
+
+////references to const ((that we CANNOT))
+
+const int i = 0;
+int &r = i;
+#=> error: nonconst reference to a const object .
