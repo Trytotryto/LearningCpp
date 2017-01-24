@@ -32,3 +32,8 @@ const int& r = i;
 const int i = 0;
 int &r = i;
 #=> error: nonconst reference to a const object . that is we cannot bind an ordinary int& to a const in object
+
+1.如果返回值不是内部数据类型，将函数A GetA(void) 改写为const A & GetA(void)的确能提高效率。但此时千万千万要小心，
+一定要搞清楚函数究竟是想返回一个对象的“拷贝”还是仅返回“别名”就可以了，否则程序会出错。
+
+const成员函数也不能在函数中调用其他非const 的函数。
