@@ -18,13 +18,13 @@ int* p = &i;
 
 ////references to const ((that we can))
 int i = 0;
-const int& r = i; 
+const int &r = i; 
 
 #=> 1.we cannot alter i via r; 2.we can manipulate and alter i direcly;
     3.just the same as low-level pointer; 4.there is no top-level reference , because it's natural from it's defintion;
     
 const int i = 0;
-const int& r = i;
+const int &r = i;
 #=> both reference and underlying object are const
 
 ////references to const ((that we CANNOT))
