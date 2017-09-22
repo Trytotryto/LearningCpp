@@ -30,13 +30,13 @@ const int i = 0; #=> a const must be initialized.
 	`const int *const p = &i;`
 
 
-2. **pointers and const ((that we CANNOT))**
+2. **pointers and const (correct)**
 
 const int i = 0;
 int* p = &i;
 #=> error : p is a plain pointer
 
-3. **references to const ((that we can))**
+3. **~~references to const (incorrect)~~**
 int i = 0;
 const int &r = i; 
 
@@ -56,4 +56,4 @@ int &r = i;
 5. **const在成员函数中**
 - 如果返回值不是内部数据类型，将函数A GetA(void) 改写为const A & GetA(void)的确能提高效率。但此时千万千万要小心，
 一定要搞清楚函数究竟是想返回一个对象的“拷贝”还是仅返回“别名”就可以了，否则程序会出错。
-- ~~const成员函数也不能在函数中调用其他非const 的函数。~~
+- const成员函数也不能在函数中调用其他非const 的函数。
