@@ -11,10 +11,11 @@
 const int i = 0; #=> a const must be initialized. 
 
 1. **pointers and const ((that we can))**
-
+```
 int i = 0;
-
-const int *p = &i; #=> low-level const. 1.we can change p; 2.we CANNOT alter i via p; 3.we can manipulate and alter i direcly.
+const int *p = &i; 
+#=> low-level const. 1.we can change p; 2.we CANNOT alter i via p; 3.we can manipulate and alter i direcly.
+```
 
 int *const p = &i; #=> top-level const. 1.p will always points to i;
 
