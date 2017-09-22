@@ -3,7 +3,8 @@
 2. Learn Eigen Library.
 3. A new Languages features perday.
 
-[这里面说的不错](http://www.cnblogs.com/wintergrass/archive/2011/04/15/2015020.html)
+[这里面说的不错](http://www.cnblogs.com/wintergrass/archive/2011/04/15/2015020.html)  
+---
 //const
 const int i = 0; #=> a const must be initialized. 
 
