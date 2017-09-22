@@ -36,7 +36,7 @@ const int i = 0;
 int* p = &i;
 #=> error : p is a plain pointer
 
-3. **~~references to const (incorrect)~~**
+3. **~~~~references to const (incorrect)~~~~**
 int i = 0;
 const int &r = i; 
 
