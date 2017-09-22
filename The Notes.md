@@ -8,7 +8,7 @@
 //const
 const int i = 0; #=> a const must be initialized. 
 
-//pointers and const ((that we can))
+[**pointers and const ((that we can))**]
 int i = 0;
 
 const int *p = &i; #=> low-level const. 1.we can change p; 2.we CANNOT alter i via p; 3.we can manipulate and alter i direcly.
